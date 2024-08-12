@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+     --VeryDarkBlue: hsl(243, 87%, 12%);
+     --DesaturatedBlue: hsl(238, 22%, 44%);
+     --BrightBlue: hsl(224, 93%, 58%);
+     --ModerateCyan: hsl(170, 45%, 43%;);
+     --LightGrayishBlue: hsl(240, 75%, 98%);
+     --LightGray: hsl(0, 0%, 75%);
+     --Fontsize: 16px;
+     --Family: [Raleway](https://fonts.google.com/specimen/Raleway);
+     --Weights: 400, 700;
+     --Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans);
+      --Weights: 400;
+
+}
+.features {
+    padding-left: 1250px;
+    position: relative; top: -10px;
+}
+.team {
+    padding-left: 1350px;
+    position: relative; top: -28px;
+}
+.signin {
+    padding-left: 1435px;
+    position: relative; top: -46px;
+}
+.svg{
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+footer{
+    
+    background-color: var(--VeryDarkBlue);
+    color: var(--LightGrayishBlue);
+    font-family: var(--Family);
+}
