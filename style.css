@@ -138,3 +138,12 @@ img {
     margin-bottom: 40px;
 }
 
+
+.section3 {
+    background-color: var(--DesaturatedBlue); 
+    color: var(--LightGray)  
+}
+.boton2 {
+    color: var(--LightGray);
+    background-color: var(--BrightBlue);
+}
