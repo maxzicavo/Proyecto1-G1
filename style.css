@@ -40,10 +40,124 @@ body {
     left: 40px;
 }
 footer{
-    
     background-color: var(--VeryDarkBlue);
     color: var(--LightGrayishBlue);
     font-family: var(--Family);
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 0.8fr 1.4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "svgfooter about contact logosredes"
+    "phone about contact logosredes";
+}
+.logosredes{
+    display: grid;
+    grid-area: logosredes;
+    display: flex;
+            align-items: center;
+            height: 250px;
+            gap: 16px;
+            padding-top: 80px;
+            justify-items: center;
+}
+.svgfooter {
+    display: grid;
+    grid-area: svgfooter;
+    position: relative; top: 70px;left: 90px;
+    filter: invert(96%) sepia(0%) saturate(10%) hue-rotate(76deg) brightness(1000%) contrast(95%); 
+}
+.phone {
+    display: grid;
+    grid-area: phone;
+    padding-top: 30px;
+    padding-left: 90px;
+}
+.about {
+    display: grid;
+    grid-area: about;
+    padding-top: 150px;
+    padding-left: 70px;
+    gap: 8px;
+}
+.contact {
+    display: grid;
+    grid-area: contact;
+    padding-top: 150px;
+    padding-left: 35px;
+}
+.svgphone {
+    position: relative;
+}
+.etiquetaphone {
+    position: absolute;
+    left: 124px;
+}
+.etiquetaexample {
+    position: relative;
+    left: 31px;
+    bottom: 8px;
+    /*top: 470px;*/
+}
+.etiquetaabout:hover{
+    color: var(--DesaturatedBlue);
+}
+.etiquetajobs:hover{
+    color: var(--DesaturatedBlue);
+}
+.etiquetapress:hover{
+    color: var(--DesaturatedBlue);
+}
+.etiquetablog:hover{
+    color: var(--DesaturatedBlue);
+}
+.etiquetaphone:hover {
+    color: var(--DesaturatedBlue);
+}
+.etiquetaexample:hover{
+    color: var(--DesaturatedBlue);
+}
+.contactus:hover{
+    color: var(--DesaturatedBlue);
+}
+.terms:hover{
+    color: var(--DesaturatedBlue);
+}
+.privacy:hover{
+    color: var(--DesaturatedBlue);
+}
+.svgmail{
+    position: relative;
+    top: 20px;
+}
+.facebook{
+    width: 40px;
+    border-width: 50000px;
+    border-radius: 50%;
+    filter: invert(96%) sepia(15%) saturate(106%) hue-rotate(76deg) brightness(96%) contrast(95%); 
+    position: relative; left: -5px;
+    
+}
+.instagram{
+    width: 40px;
+    border-radius: 50%;
+    filter: invert(96%) sepia(15%) saturate(106%) hue-rotate(76deg) brightness(96%) contrast(95%);
+    position: relative; left: 60px; top: 0px;
+}
+.twitter {
+    width: 40px;
+    border-radius: 50%;
+    filter: invert(96%) sepia(15%) saturate(106%) hue-rotate(76deg) brightness(96%) contrast(95%);
+    position: relative; left: -55px;
+
+}
+.twitter:hover{
+    background-color: var(--DesaturatedBlue);
+}
+.facebook:hover {
+    background-color: var(--DesaturatedBlue);
+}
+.instagram:hover {
+    background-color: var(--DesaturatedBlue);
 }
 
 
