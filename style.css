@@ -141,13 +141,13 @@ footer{
     background-color: var(--DesaturatedBlue);
 }
 
-.section1 {
+.section1, .section2 {
     display: flex;
     margin: 4rem 0;
     column-gap: 20px;
 }
 
-.section1 > div {
+.section1 > div, .section2 > div{
     width: 50%;
 }
 
@@ -155,7 +155,7 @@ footer{
     font-weight: 500;    
 }
 
-.section1 img {
+.section1 img, .section2 img{
     width: 80%;  
     height: auto;  
 }
@@ -184,22 +184,13 @@ button {
     background-color: rgb(75, 190, 208);
 }
 
-.section2 {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 100px;
-}
 
 .section2 p {
     margin-right: 45%;
 }
 
-.svg3 {
-    transform: scale(0.6);
-    position: absolute;
-    right: auto;
-    top: 120px;
-}
+
+
 
 .subtitulo2 {
     margin-bottom: 30px;
@@ -236,12 +227,15 @@ a:hover {
     font-size: 14px;
     font-weight: 400;
     margin: 40px auto;
-    margin-right: 65%;
     padding: 35px;
     border-radius: 3px;
     box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
+
+.card-flex {
+    display: flex;
+}
+
 
 .quotes {
     position: absolute;
@@ -254,27 +248,18 @@ a:hover {
     top: 20px;
 }
 
-img {
-    height: 2rem;
-    border-radius: 30px;
-    /* position: absolute; */
-    left: 35px;
-    bottom: 35px;
+.picture-kyle {
+    height: 1rem;
+    border-radius: 50%;
 }
+
 .kyle {
     font-weight: 700;
     font-size: 12px;
-    position: relative;
-    left: 40px;
-    top: 40px;
 }
 
 .kyle2 {
     font-size: 10px;
-    position: relative;
-    left: 40px;
-    top: 40px;
-    margin-bottom: 40px;
 }
 
 
