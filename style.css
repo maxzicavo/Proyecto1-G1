@@ -47,7 +47,7 @@ footer{
     font-family: var(--Family);
     display: grid;
     grid-template-columns: 1.3fr 1fr 0.8fr 1.4fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     grid-template-areas:
     "svgfooter about contact logosredes"
     "phone about contact logosredes";
@@ -136,20 +136,20 @@ footer{
     border-width: 50000px;
     border-radius: 50%;
     filter: invert(96%) sepia(15%) saturate(106%) hue-rotate(76deg) brightness(96%) contrast(95%); 
-    position: relative; left: -5px;
+    /* position: relative; left: -5px; */
     
 }
 .instagram{
     width: 40px;
     border-radius: 50%;
     filter: invert(96%) sepia(15%) saturate(106%) hue-rotate(76deg) brightness(96%) contrast(95%);
-    position: relative; left: 60px; top: 0px;
+    /* position: relative; left: 60px; top: 0px; */
 }
 .twitter {
     width: 40px;
     border-radius: 50%;
     filter: invert(96%) sepia(15%) saturate(106%) hue-rotate(76deg) brightness(96%) contrast(95%);
-    position: relative; left: -55px;
+    /* position: relative; left: -55px; */
 
 }
 .twitter:hover{
