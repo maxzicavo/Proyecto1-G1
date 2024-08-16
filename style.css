@@ -6,7 +6,8 @@
 
 body {
     font-family: Open Sans;
-    margin: 70px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 :root {
@@ -161,7 +162,48 @@ footer{
     background-color: var(--DesaturatedBlue);
 }
 
+.section1 {
+    display: flex;
+    margin: 4rem 0;
+    column-gap: 20px;
+}
 
+.section1 > div {
+    width: 50%;
+}
+
+.section1 p {
+    font-weight: 500;    
+}
+
+.section1 img {
+    width: 80%;  
+    height: auto;  
+}
+.section1 h1 {
+    font-size: clamp(2rem, 1.7308rem + 1.0769vw, 2.7rem);
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem
+    /* margin-bottom: clamp(1.2rem, 0.9718rem + 2.2535vw, 2rem); */
+}
+.conten_form1 {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.conten_form1 div:first-child {
+    width: 55%;
+}
+
+button {
+    min-width: 250px;
+}
+
+.btn:hover{
+    background-color: rgb(75, 190, 208);
+}
 
 .section2 {
     position: relative;
@@ -236,7 +278,7 @@ a:hover {
 img {
     height: 2rem;
     border-radius: 30px;
-    position: absolute;
+    /* position: absolute; */
     left: 35px;
     bottom: 35px;
 }
