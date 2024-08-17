@@ -403,5 +403,21 @@ header {
     }
     .ul > li{
         margin: 5px;
-    }   
+    }  
+    .section3 {
+        flex-direction: column;
+        padding: 2.5rem;
+        align-items: center;
+        gap: 20px;
+    }
+    .section3 > div {
+        width: 90%;
+        text-align: center;
+    }
+    .section3 h2 {
+        font-size: 1.3rem;
+    }
+    .section3 .invalid-feedback {
+        text-align: left;
+    }
 }
