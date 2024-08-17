@@ -193,12 +193,9 @@ footer{
     margin-bottom: 1.5rem
 }
 .conten_form1 div:first-child {
-    width: 55%;
-}
+    width: 60%;
+} 
 
-button {
-    min-width: 250px;
-}
 
 .btn:hover{
     background-color: rgb(75, 190, 208);
@@ -360,6 +357,13 @@ header {
 .section2 > div {
     background-color: var(--LightGrayishBlue);
 }
+
+@media (min-width: 1196px) {
+    
+    button {
+        min-width: 250px;
+    }
+}
 @media (max-width: 1195px) {
     .contenedorlogo {
         width: 40%;
@@ -372,6 +376,10 @@ header {
         padding-left: 0;
     }  
 
+    .section1 {
+        padding: 1rem;
+    }
+
     .section1 h1 {
         font-size: 1.8rem;
         font-weight: 700;
@@ -380,9 +388,45 @@ header {
         /* margin-bottom: clamp(1.2rem, 0.9718rem + 2.2535vw, 2rem); */
     }
     .conten_form1{
-        flex-direction:column;
+        column-gap: 1rem;
+    }
+    .conten_form1 > div:last-child {
+        width: 30%;
+    }
+    button {
+        width: 100%;
     }
 }
+
+@media (max-width: 800px) {
+    .conten_form1 > div:last-child {
+        margin: auto;
+        width: 70%;
+    }
+
+    .conten_form1 {
+        flex-direction: column;
+    }
+
+    .section1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2rem;
+    }
+    .section1 > div {
+        width: 100%;
+        text-align: center;
+    
+    }
+    .conten_form1 div:first-child {
+        width: 100%;
+    } 
+    
+    .section1 .invalid-feedback {
+        text-align: left;
+    }
+}
+
 @media (max-width: 375px) {
     .contenedorlogo {
         width: 30%;
@@ -419,5 +463,9 @@ header {
     }
     .section3 .invalid-feedback {
         text-align: left;
+    }
+    .conten_form1 > div:last-child {
+        margin: auto;
+        width: 100%;
     }
 }
