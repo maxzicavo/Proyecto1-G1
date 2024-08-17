@@ -187,6 +187,11 @@ footer{
 #invalido {
     color: var(--LightGrayishBlue);
 }
+.section3 h2 {
+    font-family: Raleway;
+    font-weight: 650;
+    margin-bottom: 1.5rem
+}
 .conten_form1 div:first-child {
     width: 55%;
 }
