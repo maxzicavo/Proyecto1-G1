@@ -177,7 +177,17 @@ footer{
     display: flex;
     column-gap: 1.5rem;
 }
-
+.conten_form2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1.5rem;
+}
+.section3 input {
+    max-width: 450px;
+}
+#invalido {
+    color: var(--LightGrayishBlue);
+}
 .conten_form1 div:first-child {
     width: 55%;
 }
@@ -278,12 +288,16 @@ a:hover {
 
 
 .section3 {
+    display: flex;
     background-color: var(--DesaturatedBlue); 
-    color: var(--LightGray)  
+    color: var(--LightGrayishBlue);
+    padding-top: 5rem; 
+    padding-bottom: 4rem;
+    padding-left: 5.5rem;
+    gap: 150px;
 }
-.boton2 {
-    color: var(--LightGray);
-    background-color: var(--BrightBlue);
+.section3 > div {
+    width: 50%;
 }
 .divphone{
     display: flex;
