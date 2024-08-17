@@ -155,10 +155,16 @@ footer{
     font-weight: 500;    
 }
 
-.section1 img, .section2 img{
+.section1 img {
     width: 80%;  
     height: auto;  
 }
+
+.image img {
+    width: 80%;  
+    height: auto; 
+}
+
 .section1 h1 {
     font-size: clamp(2rem, 1.7308rem + 1.0769vw, 2.7rem);
     font-family: Raleway;
@@ -185,12 +191,12 @@ button {
 }
 
 
+
+
+
 .section2 p {
-    margin-right: 45%;
+    margin-right: 25%;
 }
-
-
-
 
 .subtitulo2 {
     margin-bottom: 30px;
@@ -224,33 +230,40 @@ a:hover {
 }
 
 .card {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 600;
     margin: 40px auto;
     padding: 35px;
+    margin-right: 350px;
     border-radius: 3px;
     box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.1);
+    line-height: 1.5rem;
+}
+
+.card p {
+    margin-right: 5%;
 }
 
 .card-flex {
     display: flex;
+    margin-top: rem;
+    margin-right: auto;
 }
-
 
 .quotes {
     position: absolute;
 }
 
 .testimonial {
-    margin-bottom: 20px;
-    display: inline;
     position: relative;
     top: 20px;
 }
 
 .picture-kyle {
-    height: 1rem;
     border-radius: 50%;
+    height: 2rem;
+    margin-right: 10px;
+
 }
 
 .kyle {
@@ -260,6 +273,7 @@ a:hover {
 
 .kyle2 {
     font-size: 10px;
+    flex-shrink: 0;
 }
 
 
