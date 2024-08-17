@@ -24,7 +24,7 @@ body {
       --Weights: 400;
 }
 
-/* .features {
+.features {
     padding-left: 1250px;
     position: relative; top: -10px;
 }
@@ -40,14 +40,14 @@ body {
     position: relative;
     top: 40px;
     left: 40px;
-} */
+}
 footer{
     background-color: var(--VeryDarkBlue);
     color: var(--LightGrayishBlue);
     font-family: var(--Family);
     display: grid;
     grid-template-columns: 1.4fr 1fr 0.8fr 1.4fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     grid-template-areas:
     "svgfooter svgfooter svgfooter svgfooter"
     "phone about contact logosredes";
@@ -56,7 +56,7 @@ footer{
     display: grid;
     grid-area: logosredes;
     display: flex;
-            height: 50px;
+            height: 250px;
             gap: 16px;
             padding-top: 18px;
 }
@@ -141,15 +141,16 @@ footer{
     background-color: var(--DesaturatedBlue);
 }
 
-.section1, .section2 {
+.section1 {
     display: flex;
     margin: 4rem 0;
     column-gap: 20px;
 }
 
-.section1 > div, .section2 > div{
+.section1 > div {
     width: 50%;
 }
+
 .section1 p {
     font-weight: 500;    
 }
@@ -158,12 +159,6 @@ footer{
     width: 80%;  
     height: auto;  
 }
-
-.image img {
-    width: 80%;  
-    height: auto; 
-}
-
 .section1 h1 {
     font-size: clamp(2rem, 1.7308rem + 1.0769vw, 2.7rem);
     font-family: Raleway;
@@ -176,17 +171,7 @@ footer{
     display: flex;
     column-gap: 1.5rem;
 }
-.conten_form2 {
-    display: flex;
-    flex-direction: column;
-    column-gap: 1.5rem;
-}
-.section3 input {
-    max-width: 450px;
-}
-#invalido {
-    color: var(--LightGrayishBlue);
-}
+
 .conten_form1 div:first-child {
     width: 55%;
 }
@@ -199,12 +184,21 @@ button {
     background-color: rgb(75, 190, 208);
 }
 
-
-
-
+.section2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 100px;
+}
 
 .section2 p {
-    margin-right: 25%;
+    margin-right: 45%;
+}
+
+.svg3 {
+    transform: scale(0.6);
+    position: absolute;
+    right: auto;
+    top: 120px;
 }
 
 .subtitulo2 {
@@ -239,25 +233,14 @@ a:hover {
 }
 
 .card {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     margin: 40px auto;
+    margin-right: 65%;
     padding: 35px;
-    margin-right: 350px;
     border-radius: 3px;
     box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.1);
-    line-height: 1.5rem;
-}
-
-.card p {
-    margin-right: 5%;
-}
-
-.card-flex {
-    display: inline-flex;
-    margin-top: 1.5rem;
-    /*flex-wrap: nowrap;*/
-    gap: 0 0;
+    position: relative;
 }
 
 .quotes {
@@ -265,44 +248,44 @@ a:hover {
 }
 
 .testimonial {
+    margin-bottom: 20px;
+    display: inline;
     position: relative;
     top: 20px;
 }
 
-.picture-kyle {
-    border-radius: 50%;
+img {
     height: 2rem;
-    margin-right: 10px;
+    border-radius: 30px;
+    /* position: absolute; */
+    left: 35px;
+    bottom: 35px;
 }
-
-
 .kyle {
     font-weight: 700;
     font-size: 12px;
-    margin: 0;
-    line-height: 1rem;
+    position: relative;
+    left: 40px;
+    top: 40px;
 }
 
 .kyle2 {
     font-size: 10px;
-    margin: 0;
-    line-height: 1rem;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    margin-bottom: 40px;
 }
 
 
 .section3 {
-    display: flex;
     background-color: var(--DesaturatedBlue); 
-    color: var(--LightGrayishBlue);
-    padding-top: 5rem; 
-    padding-bottom: 4rem;
-    padding-left: 5.5rem;
-    gap: 150px;
+    color: var(--LightGray)  
 }
-.section3 > div {
-    width: 50%;
+.boton2 {
+    color: var(--LightGray);
+    background-color: var(--BrightBlue);
 }
-
 .divphone{
     display: flex;
     gap: 5px;
@@ -321,21 +304,4 @@ a:hover {
 .svgmail {
     width: 20px;
     height: 20px;
-}
-header {
-    display: flex;
-    padding-top: 50px;
-    align-items: center;
-    gap: 1000px;    
-}
-.palabrasheader{
-    display: flex;
-    column-gap: 40px;
-    /* gap: 10px; */
-}
-.features {
-    /* padding-right: 25px; */
-}
-.signin {
-    /* padding-left: 25px; */
 }
