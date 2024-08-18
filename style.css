@@ -147,7 +147,7 @@ footer{
     column-gap: 20px;
 }
 
-.section1 > div, .section2 > div{
+.section1 > div {
     width: 50%;
 }
 .section1 p {
@@ -203,7 +203,22 @@ footer{
 
 
 
+.section2 {
+    padding-top: 100px;
+    background-image: url("./images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    /*background-color: var(--LightGrayishBlue);*/
+    gap: 0px;
+  
+}
+.section2 > div {
+    background-color: var(--LightGrayishBlue);
+}
 
+.contenido-interno {
+    padding-left: 5rem;
+}
 
 .section2 p {
     margin-right: 25%;
@@ -346,17 +361,7 @@ header {
     display: inline;
     margin: 1.5rem;
 }
-.section2 {
-    padding-top: 100px;
-    background-image: url("./images/bg-curve-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-   /*  background-color: var(--LightGrayishBlue); */
-   gap: 0px;
-}
-.section2 > div {
-    background-color: var(--LightGrayishBlue);
-}
+
 
 @media (min-width: 1196px) {
     
@@ -380,7 +385,7 @@ header {
         padding: 1rem;
     }
 
-    .section1 h1 {
+    .section1 h1, .section2 h1{
         font-size: 1.8rem;
         font-weight: 700;
         line-height: 2.8rem;
@@ -393,9 +398,15 @@ header {
     .conten_form1 > div:last-child {
         width: 30%;
     }
+
     button {
         width: 100%;
     }
+
+    .card {
+        width: 75%;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -425,8 +436,59 @@ header {
     .section1 .invalid-feedback {
         text-align: left;
     }
+
+    .section2 {
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+
+    .section2 > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 .texto2, .section2 .texto3 {
+        margin-right: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        text-align: left;
+    }
+
+    .section2 h1 {
+        font-size: 1.2rem;
+        margin-right: 0;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 15%;
+        background-color: var(--LightGrayishBlue);
+    }
+
+    .texto3 {
+        margin-bottom: 10%;
+    }
+
+    .contenido-interno {
+        padding-right: 5rem;
+    }
+    .card {
+        margin: 40px auto auto auto;
+    
+    }
+
+    .testimonial {
+        padding-left: 0;
+        text-align: left;
+    }
+    .Bio {
+        text-align: left;
+    }
+
+   
+
+    
 }
 
+   
 @media (max-width: 375px) {
     .contenedorlogo {
         width: 30%;
@@ -469,3 +531,4 @@ header {
         width: 100%;
     }
 }
+
