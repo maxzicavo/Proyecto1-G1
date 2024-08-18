@@ -149,6 +149,7 @@ footer{
 
 .section1 > div {
     width: 50%;
+    padding-left: 5rem;
 }
 .section1 p {
     font-weight: 500;    
@@ -427,8 +428,17 @@ header {
     .section1 > div {
         width: 100%;
         text-align: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
     
     }
+
+    .section1 h1 {
+        font-size: 1.2rem;
+        line-height: normal;
+        margin-top: 20px;
+    }
+
     .conten_form1 div:first-child {
         width: 100%;
     } 
@@ -455,7 +465,8 @@ header {
     }
 
     .section2 h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: normal;
         margin-right: 0;
         padding-right: 2rem;
         padding-left: 2rem;
@@ -468,7 +479,8 @@ header {
     }
 
     .contenido-interno {
-        padding-right: 5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
     .card {
         margin: 40px auto auto auto;
